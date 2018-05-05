@@ -41,32 +41,25 @@ final class User : NSObject, Mappable {
 	var username : String?
 	var age : Int?
 
-	override init() { 
+	override init() { }
 
-	}
-
-	public required init?(map : Map) {
-
-	}
+	public required init?(map : Map) { }
 
 	func mapping(map : Map) {
 
 		username <- map["username"]
 		age <- map["age"]
-
 	}
 
-	func initWithRealm(realm : UserRealm {
+	func initWithRealm(realm : UserRealm) {
 
 		username = realm.username
 		age = realm.age
-
 	}
 
-	func mapToRealm() -> UserRealm{
+	func mapToRealm() -> UserRealm {
 
 		return RealmUser(value : [ "username" : self.username!,"age" : self.age! ])
-
 	}
 }
 ```
@@ -80,6 +73,5 @@ class UserRealm : Object {
 
 	dynamic var username = String()
 	dynamic var age = Int()
-
 }
 ```
