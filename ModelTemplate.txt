@@ -20,13 +20,13 @@ $map
 
 	}
 
-	func initWithRealm(realm : $model Realm {
+	func initWithRealm(realm : $modelrealm {
 
 $realm
 
 	}
 
-	func mapToRealm() -> $model Realm{
+	func mapToRealm() -> $modelrealm {
 
 		return Realm$model(value : [ $realmmap ])
 

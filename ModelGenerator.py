@@ -23,9 +23,9 @@ for variable,type in variablesList.items() :
 realmmap = realmmap.rstrip(',')
 
 modelfile = open(model + ".swift", 'w')
-modelfile.write(Template(open('ModelTemplate.txt').read()).substitute({'model':model, 'variables':'\n'.join(variables), 'map':'\n'.join(map), 'realm':'\n'.join(realm), 'realmmap':realmmap}))
+modelfile.write(Template(open('ModelTemplate.txt').read()).substitute({'model':model,'modelrealm':model + "Realm", 'variables':'\n'.join(variables), 'map':'\n'.join(map), 'realm':'\n'.join(realm), 'realmmap':realmmap}))
 modelfile.close()
 
 realmfile = open(model + "Realm" + ".swift", 'w')
-realmfile.write(Template(open('RealmTemplate.txt').read()).substitute({'model':model,'realmvariables':'\n'.join(realmvariables)}))
+realmfile.write(Template(open('RealmTemplate.txt').read()).substitute({'modelrealm':model + "Realm",'realmvariables':'\n'.join(realmvariables)}))
 realmfile.close()
