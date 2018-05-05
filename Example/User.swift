@@ -7,9 +7,7 @@ final class User : NSObject, Mappable {
 	var username : String?
 	var age : Int?
 
-	override init() { 
-
-	}
+	override init() { }
 
 	public required init?(map : Map) {
 
@@ -22,7 +20,7 @@ final class User : NSObject, Mappable {
 
 	}
 
-	func initWithRealm(realm : UserRealm {
+	func initWithRealm(realm : UserRealm) {
 
 		username = realm.username
 		age = realm.age
