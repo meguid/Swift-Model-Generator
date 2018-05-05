@@ -77,8 +77,8 @@ python ModelGenerator.py
 Conversation
 conversationId Int
 message String
-sender User
-receiver User
+sender `User`
+receiver `User`
 finish X
 ```
 
