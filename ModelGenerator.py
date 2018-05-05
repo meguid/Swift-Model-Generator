@@ -12,7 +12,6 @@ while True:
     variable, type = raw_input().split(" ")
     if variable == "finish" : break
     else : variablesList[variable] = type
-#variablesList = {"id": "Int" , "email" : "String", "is_active": "Bool", "is_deleted" : "Bool", "username": "String"}
 
 for variable,type in variablesList.items() :
     variables.append("\tvar " + variable + " : " + type + "?")
