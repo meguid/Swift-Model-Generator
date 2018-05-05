@@ -1,0 +1,34 @@
+import Foundation
+import UIKit 
+import ObjectMapper
+
+final class $model : NSObject, Mappable {
+
+$variables
+
+	override init() { 
+
+	}
+
+	public required init?(map : Map) {
+
+	}
+
+	func mapping(map : Map) {
+
+$map
+
+	}
+
+	func initWithRealm(realm : $model Realm {
+
+$realm
+
+	}
+
+	func mapToRealm() -> $model Realm{
+
+		return Realm$model(value : [ $realmmap ])
+
+	}
+}

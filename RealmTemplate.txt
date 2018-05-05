@@ -1,0 +1,8 @@
+import Foundation
+import RealmSwift
+
+class $model Realm : Object {
+
+$realmvariables
+
+}
