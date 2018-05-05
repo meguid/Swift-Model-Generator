@@ -29,7 +29,7 @@ final class User : NSObject, Mappable {
 
 	}
 
-	func mapToRealm() -> UserRealm{
+	func mapToRealm() -> UserRealm {
 
 		return RealmUser(value : [ "username" : self.username!,"age" : self.age! ])
 
