@@ -6,25 +6,25 @@ A Python script generates Swift Models + Object Mapper + Realm
 ### Run the Python Scipt
 
 ```python
-python ModelGenerator.py
+$ python ModelGenerator.py
 ```
 
 ### Set the model title
 
-```python
-User
+```bash
+$ User
 ```
 
 ### Set the model parameters
 
-```python
-username String
-age Int
+```bash
+$ username String
+$ age Int
 ```
 
 ### Finish
-```python
-finish X
+```bash
+$ finish X
 ```
 
 
@@ -72,14 +72,14 @@ class UserRealm : Object {
 ## Nested Models
 
 ### Generate new model
-```python
-python ModelGenerator.py
-Conversation
-conversationId Int
-message String
-sender `User`
-receiver `User`
-finish X
+```bash
+$ python ModelGenerator.py
+$ Conversation
+$ conversationId Int
+$ message String
+$ sender User
+$ receiver User
+$ finish X
 ```
 
 
