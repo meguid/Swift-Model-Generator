@@ -5,7 +5,7 @@ A Python script generates Swift Models + Object Mapper + Realm
 
 ### Run the Python Scipt
 
-```python
+```bash
 $ python ModelGenerator.py
 ```
 
@@ -71,7 +71,7 @@ class UserRealm : Object {
 
 ## Nested Models
 
-### Generate new model
+### Generate new model `Conversation` with `User` parameters.
 ```bash
 $ python ModelGenerator.py
 $ Conversation
