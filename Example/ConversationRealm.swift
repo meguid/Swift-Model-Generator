@@ -7,4 +7,5 @@ class ConversationRealm : Object {
 	dynamic var message = String()
 	dynamic var sender = User()
 	dynamic var receiver = User()
+
 }

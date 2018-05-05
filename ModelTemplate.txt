@@ -22,6 +22,6 @@ $realm
 
 	func mapToRealm() -> $modelrealm {
 
-		return Realm$model(value : [ $realmmap ])
+		return $modelrealm(value : [ $realmmap ])
 	}
 }

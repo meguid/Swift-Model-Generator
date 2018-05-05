@@ -31,6 +31,6 @@ final class Conversation : NSObject, Mappable {
 
 	func mapToRealm() -> ConversationRealm {
 
-		return RealmConversation(value : [ "conversationId" : self.conversationId!,"message" : self.message!,"sender" : self.sender!,"receiver" : self.receiver! ])
+		return ConversationRealm(value : [ "conversationId" : self.conversationId!,"message" : self.message!,"sender" : self.sender!,"receiver" : self.receiver! ])
 	}
 }
